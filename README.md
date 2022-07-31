@@ -10,6 +10,7 @@ The contact book is an application developed in Android Studio with Java program
 * User search
 * Filter by ascending or descending
 * Landscape/Portrait
+* Responsive
 * English and Spanish language
 
 ## Author
