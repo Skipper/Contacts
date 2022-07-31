@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Contact book</string>
+
+    <!-- Item Contact -->
+    <string name="item_contacto_name_initial_hint">T</string>
+    <string name="item_contacto_name_hint">Title goes here</string>
+    <string name="item_contacto_number_hint">Secondary text</string>
+
+    <!-- Fragment contacts -->
+    <string name="fragment_contacts_empty_image">Empty image</string>
+    <string name="fragment_contacts_empty_title">Your contact list is empty</string>
+    <string name="fragment_contacts_empty_paragraph">It looks like you have not added any contacts yet</string>
+    <string name="fragment_contacts_add_contact">Add contact</string>
+
+    <!-- Main and Toolbar -->
+    <string name="main_contacts_title">Contacts</string>
+    <string name="search_main_activity_hint">Search data here&#8230;</string>
+
+    <!-- Permisos -->
+    <string name="btn_details_try_again_message_call">You need to enable this permission to make a call</string>
+    <string name="btn_details_try_again_call">Try again</string>
+    <string name="btn_details_try_again_cancel">No thanks</string>
+
+    <!-- Abrir correo electronico -->
+    <string name="btn_details_send_email">Send using&#8230;</string>
+    <string name="message_details_send_email_header">Test message</string>
+    <string name="message_details_send_email_body">Created by Alejandro Martinez</string>
+
+    <!-- Exportar Import contacts -->
+    <string name="btn_main_activity_try_again_message">You need to enable this permission to be able to export and import contacts</string>
+    <string name="btn_main_activity_try_again">Try again</string>
+    <string name="btn_main_activity_try_again_cancel">No thanks</string>
+
+    <!-- Validations -->
+    <string name="invalidate_name">Please enter valid name</string>
+    <string name="invalidate_direction">Please enter valid direction</string>
+    <string name="invalidate_phone">Please enter a valid number</string>
+    <string name="invalidate_telephone">Please enter a valid number</string>
+    <string name="invalidate_email">Enter valid email</string>
+    <string name="add_contact_validation_succ">Successful validation</string>
+    <string name="add_contact_validation_fai">Failure validation</string>
+
+    <!-- Order By -->
+    <string name="main_activity_order_by_title">Order by</string>
+    <string name="main_activity_order_by_option_one">Ascending</string>
+    <string name="main_activity_order_by_option_two">Descending</string>
+    <string name="main_activity_order_by_option_three">Newest</string>
+    <string name="main_activity_order_by_option_four">Oldest</string>
+
+    <!-- Menu Actions -->
+    <string name="menu_action_search">Search</string>
+    <string name="menu_action_order_by">Order by</string>
+    <string name="menu_action_delete_all">Delete all</string>
+    <string name="menu_action_export">Export</string>
+    <string name="menu_action_import">Import</string>
+
+    <!-- Menu Actions Popup -->
+    <string name="menu_action_popup_edit">Editar</string>
+    <string name="menu_action_popup_delete">Borrar</string>
+
+    <!-- Contact Add -->
+    <string name="contact_add_title">Add Contact</string>
+
+    <string name="contact_add_name_hint">Names</string>
+    <string name="contact_add_name">Alejandro Martinez</string>
+    <string name="contact_add_name_helper">Pepito Perez</string>
+    <string name="contact_add_name_error">Name error</string>
+
+    <string name="contact_add_direction_hint">Direction</string>
+    <string name="contact_add_direction">Alang Turing</string>
+    <string name="contact_add_direction_helper">Street 12 N 13 &#8211; 14</string>
+    <string name="contact_add_direction_error">Steering error</string>
+
+    <string name="contact_add_phone_hint">Phone</string>
+    <string name="contact_add_phone">123654789</string>
+    <string name="contact_add_phone_helper">123456789</string>
+    <string name="contact_add_phone_error">Phone error</string>
+
+    <string name="contact_add_telephone_hint">Telephone</string>
+    <string name="contact_add_telephone">603214578</string>
+    <string name="contact_add_telephone_helper">603456789</string>
+    <string name="contact_add_telephone_error">Telephone error</string>
+
+    <string name="contact_add_email_hint">Email</string>
+    <string name="contact_add_email">alejandro@gmail.com</string>
+    <string name="contact_add_email_helper">example@gmail.com</string>
+    <string name="contact_add_email_error">Email error</string>
+
+    <string name="contact_add_btn_save">Save</string>
+    <string name="contact_add_btn_cancel">Cancel</string>
+    <!-- End Contact Add -->
+
+
+    <!-- Fragment Details -->
+    <string name="details_contact_name_icon">Person icon</string>
+    <string name="details_contact_name_hint">Names</string>
+    <string name="details_contact_name">Alejandro Martinez</string>
+    <string name="details_contact_name_helper">Pepito Perez</string>
+    <string name="details_contact_name_error">Name error</string>
+
+    <string name="details_contact_direction_icon">Email icon</string>
+    <string name="details_contact_direction_hint">Direction</string>
+    <string name="details_contact_direction">Alang Turing</string>
+    <string name="details_contact_direction_helper">Street 12 N 13 &#8211; 14  </string>
+    <string name="details_contact_direction_error">Steering error</string>
+
+    <string name="details_contact_phone_icon">Phone icon</string>
+    <string name="details_contact_phone_hint">Phone</string>
+    <string name="details_contact_phone">123654789</string>
+    <string name="details_contact_phone_helper">123456789</string>
+    <string name="details_contact_phone_error">Phone error</string>
+
+    <string name="details_contact_telephone_icon">Telephone icon</string>
+    <string name="details_contact_telephone_hint">Telephone</string>
+    <string name="details_contact_telephone">603214578</string>
+    <string name="details_contact_telephone_helper">603456789</string>
+    <string name="details_contact_telephone_error">Telephone error</string>
+
+    <string name="details_contact_email_icon">Email icon</string>
+    <string name="details_contact_email_hint">Email</string>
+    <string name="details_contact_email">alejandro@gmail.com</string>
+    <string name="details_contact_email_helper">example@gmail.com</string>
+    <string name="details_contact_email_error">Email error</string>
+
+    <string name="details_contact_btn_save">Save</string>
+    <string name="details_contact_btn_cancel">Cancel</string>
+    <!-- End Fragment Details -->
+
+
+    <!-- Contact Edit -->
+    <string name="contact_edit_title">Edit Contact</string>
+
+    <string name="contact_edit_name_hint">Names</string>
+    <string name="contact_edit_name">Alejandro Martinez</string>
+    <string name="contact_edit_name_helper">Pepito Perez</string>
+    <string name="contact_edit_name_error">Name error</string>
+
+    <string name="contact_edit_direction_hint">Direction</string>
+    <string name="contact_edit_direction">Alang Turing</string>
+    <string name="contact_edit_direction_helper">Street 12 N 13 &#8211; 14</string>
+    <string name="contact_edit_direction_error">Direction error</string>
+
+    <string name="contact_edit_phone_hint">Phone</string>
+    <string name="contact_edit_phone">123654789</string>
+    <string name="contact_edit_phone_helper">123456789</string>
+    <string name="contact_edit_phone_error">Phone error</string>
+
+    <string name="contact_edit_telephone_hint">Telephone</string>
+    <string name="contact_edit_telephone">603214578</string>
+    <string name="contact_edit_telephone_helper">603456789</string>
+    <string name="contact_edit_telephone_error">Telephone</string>
+
+    <string name="contact_edit_email_hint">Email</string>
+    <string name="contact_edit_email">alejandro@gmail.com</string>
+    <string name="contact_edit_email_helper">example@gmail.com</string>
+    <string name="contact_edit_email_error">Email error</string>
+
+    <string name="contact_edit_btn_save">Save</string>
+    <string name="contact_edit_btn_cancel">Cancel</string>
+    <!-- End Contact Edit -->
+
+    <!-- Toast -->
+    <string name="main_activity_toast_export_error">An error has occurred, please try again or contact the developer. </string>
+    <string name="main_activity_toast_export_successful">Contacts successfully exported in: </string>
+
+    <string name="main_activity_toast_import_error">An error has occurred, please try again or contact the developer. </string>
+    <string name="main_activity_toast_import_successful">Contacts successfully imported in: </string>
+    <string name="fragment_details_collapsing_title">Details</string>
+
+</resources>

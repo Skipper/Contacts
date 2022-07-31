@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <!--    Definir nuevo style -->
+    <style name="MyTheme.DayNight" parent="Base.MyTheme" />
+
+    <!--    Definir colores     -->
+    <style name="Base.MyTheme" parent="Base.MaterialThemeBuilder">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        c2
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        e9
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        accent
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+
+        <!-- Colores: Background, Surface y Error -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+        <!-- Colores encima, en el texto  -->
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <!-- Text brand color. -->
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+    </style>
+
+    <!--    Definir componentes     -->
+    <style name="Base.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true
+        </item> <!-- API27 o superior -->
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            ?colorControlHighlight
+        </item> <!-- API27 o superior -->
+
+        <!-- Mayor compatibilidad con diseños anteriores a Material Design -->
+        <item name="colorPrimaryDark">?colorPrimaryVariant</item>
+        <item name="colorAccent">?colorSecondary</item>
+
+    </style>
+
+    <style name="MyTheme.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme.DayNight.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyTheme.DayNight.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

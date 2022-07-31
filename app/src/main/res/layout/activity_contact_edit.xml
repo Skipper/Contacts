@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editable.ContactEditActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_details"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_edit_title"
+            android:textSize="@dimen/custom_max_size"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/custom_min_width"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginTop="@dimen/custom_min_width"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/details_contact_name_hint"
+            android:maxWidth="@dimen/custom_max_width"
+            android:minWidth="@dimen/custom_min_width"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:errorContentDescription="@string/details_contact_name_error"
+            app:errorEnabled="true"
+            app:helperText="@string/details_contact_name_helper"
+            app:helperTextEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_edit_title"
+            app:layout_constraintVertical_bias="0"
+            app:startIconContentDescription="@string/app_name"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName|textCapWords"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_max_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_edit_direction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginTop="@dimen/custom_min_width"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/details_contact_direction_hint"
+            android:maxWidth="@dimen/custom_max_width"
+            android:minWidth="@dimen/custom_min_width"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:errorContentDescription="@string/details_contact_direction_error"
+            app:errorEnabled="true"
+            app:helperText="@string/details_contact_direction_helper"
+            app:helperTextEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_edit_name"
+            app:layout_constraintVertical_bias="0"
+            app:startIconContentDescription="@string/app_name"
+            app:startIconDrawable="@drawable/ic_baseline_home_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edit_direction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPostalAddress|textCapSentences"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_max_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_edit_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginTop="@dimen/custom_min_width"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/details_contact_phone_hint"
+            android:maxWidth="@dimen/custom_max_width"
+            android:minWidth="@dimen/custom_min_width"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:endIconMode="clear_text"
+            app:errorContentDescription="@string/details_contact_telephone_error"
+            app:errorEnabled="true"
+            app:helperText="@string/details_contact_phone_helper"
+            app:helperTextEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_edit_direction"
+            app:layout_constraintVertical_bias="0"
+            app:startIconContentDescription="@string/app_name"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_max_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_edit_telephone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginTop="@dimen/custom_min_width"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/details_contact_telephone_hint"
+            android:maxWidth="@dimen/custom_max_width"
+            android:minWidth="@dimen/custom_min_width"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:endIconMode="clear_text"
+            app:errorContentDescription="@string/details_contact_phone_error"
+            app:errorEnabled="true"
+            app:helperText="@string/details_contact_telephone_helper"
+            app:helperTextEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_edit_phone"
+            app:layout_constraintVertical_bias="0"
+            app:startIconContentDescription="@string/app_name"
+            app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edit_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_max_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_edit_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/details_contact_email_hint"
+            android:maxWidth="@dimen/custom_max_width"
+            android:minWidth="@dimen/custom_min_width"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:endIconMode="clear_text"
+            app:errorContentDescription="@string/details_contact_email_error"
+            app:errorEnabled="true"
+            app:helperText="@string/details_contact_email_helper"
+            app:helperTextEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_edit_telephone"
+            app:layout_constraintVertical_bias="0"
+            app:startIconContentDescription="@string/app_name"
+            app:startIconDrawable="@drawable/ic_baseline_home_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_max_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/custom_min_width"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:text="@string/details_contact_btn_cancel"
+            app:layout_constraintEnd_toStartOf="@+id/btn_edit_save"
+            app:layout_constraintTop_toTopOf="@+id/btn_edit_save"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_edit_save"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/custom_min_width"
+            android:layout_marginBottom="@dimen/custom_min_width"
+            android:text="@string/details_contact_btn_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_edit_cancel"
+            app:layout_constraintTop_toBottomOf="@+id/til_edit_email"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

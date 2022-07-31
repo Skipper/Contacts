@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ItemLarge" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="maxLines">1</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="ItemMedium" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="maxLines">1</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Toolbar de main activity -->
+    <style name="ToolbarTheme">
+        <item name="android:textColorPrimary">@android:color/holo_blue_dark</item>
+
+        <item name="actionMenuTextColor">@color/color_error</item>
+
+    </style>
+</resources>

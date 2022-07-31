@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_contacts"
+    android:layout_width="match_parent"
+    android:minWidth="344dp"
+    android:layout_height="72dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_item_contacts"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    >
+    <!--android:background="#4D232F34"
+    tiene 30%
+
+    android:background="#181F27" Gris oscuro y Primary text
+    android:background="#EEEEEE" Gris fondo
+    android:background="#0DF0FF" Azul
+    android:background="#8F8F8F" Secondary text
+    9276EF // morado
+    F1EDFE // rosado
+
+    #eeeeee
+    #B3000000
+    -->
+    <TextView
+        android:id="@+id/tv_item_contact_name_initial"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_item_contactos_name_initial"
+        android:gravity="center"
+        android:hint="@string/item_contacto_name_initial_hint"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/color_on_secondary"
+        android:textSize="@dimen/custom_max_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/tv_item_contact_name"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="bottom|start"
+        android:hint="@string/item_contacto_name_hint"
+        android:textAppearance="@style/ItemLarge"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_contact_phone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_contact_options"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_contact_name_initial"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_item_contact_phone"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:gravity="bottom"
+        android:hint="@string/item_contacto_number_hint"
+        android:textAppearance="@style/ItemMedium"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_contact_name_initial"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_contact_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_contact_name" />
+
+    <TextView
+        android:id="@+id/tv_item_contact_options"
+        android:layout_width="@dimen/custom_min_width"
+        android:layout_height="@dimen/custom_min_width"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHorizontal_bias="1"
+        app:drawableBottomCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/color_divider"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_contact_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_contact_phone"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

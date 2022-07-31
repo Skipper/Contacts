@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tv_text_size_numbers">24sp</dimen>
+    <dimen name="tv_text_size_numbers_result">50sp</dimen>
+
+    <dimen name="button_text_size_numbers">18sp</dimen>
+    <dimen name="button_text_size_operations">18sp</dimen>
+
+    <dimen name="custom_min_width">24dp</dimen>
+    <dimen name="custom_max_width">24dp</dimen>
+    <dimen name="custom_max_size">16sp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
