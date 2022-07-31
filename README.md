@@ -1,6 +1,6 @@
 ## Description
 
-The contact book is an application developed in Android Studio with Java programming language and SQLite local database, which allows the user to manage the information of the people who are part of their work and/or social circle.
+The contact book is an application developed in Android Studio with Java programming language and SQLite local database, implementing Material Design standards; that allows the user to manage the information of the people who are part of their work and/or social circle.
 
 **Supports and functionalities:**
 
